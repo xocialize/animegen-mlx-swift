@@ -201,3 +201,10 @@ public final class AnimeGenPackage: ModelPackage {
                          durationSeconds: Double(frames.dim(2)) / fps, frameRate: fps))
     }
 }
+
+extension AnimeGenPackage {
+    /// The author one-liner the engine registers.
+    public nonisolated static var registration: PackageRegistration {
+        .of(AnimeGenPackage.self)
+    }
+}
