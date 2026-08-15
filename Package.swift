@@ -21,8 +21,8 @@ let package = Package(
     dependencies: [
         // The Bernini-R renderer/pipeline (dual-expert Wan2.2-A14B) — reused verbatim; AnimeGen
         // is a weights-swap + recipe on top, not a new pipeline. Pulls WanCore transitively.
-        .package(path: "../bernini-r-mlx-swift"),
-        .package(path: "../wan-core-mlx-swift"),
+        .package(url: "https://github.com/xocialize/bernini-r-mlx-swift", from: "0.2.0"),
+        .package(url: "https://github.com/xocialize/wan-core-mlx-swift", from: "0.2.0"),
         // MLXEngine contract; ≥0.27.0 for the CAN cancellation gate.
         .package(url: "https://github.com/xocialize/mlx-engine-swift", from: "0.27.0"),
         .package(url: "https://github.com/ml-explore/mlx-swift.git", from: "0.30.0"),
