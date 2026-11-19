@@ -24,8 +24,8 @@ let package = Package(
         .package(url: "https://github.com/xocialize/bernini-r-mlx-swift", from: "0.2.0"),
         .package(url: "https://github.com/xocialize/wan-core-mlx-swift", from: "0.6.0"),
         // MLXEngine contract; ≥0.27.0 for the CAN cancellation gate.
-        .package(url: "https://github.com/xocialize/mlx-engine-swift", from: "0.27.0"),
-        .package(url: "https://github.com/ml-explore/mlx-swift.git", "0.32.3"..<"0.33.0"),  // NAX split-K fix (AB-R-0778)
+        .package(url: "https://github.com/xocialize/mlx-engine-swift", from: "0.82.1"),
+        .package(url: "https://github.com/xocialize/mlx-swift", "0.32.3" ..< "0.34.0"),  // NAX split-K fix (AB-R-0778); fleet fork admits 0.33.x (AB-D-0264)
     ],
     targets: [
         .target(
